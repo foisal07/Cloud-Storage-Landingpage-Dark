@@ -8,6 +8,10 @@
 
     &__logo {
         grid-column: 1/2;
+
+        img {
+            max-width:150px;
+        }
     }
 
     &__menu {

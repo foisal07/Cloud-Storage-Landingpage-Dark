@@ -63,6 +63,10 @@ li {
   grid-column: 1/2;
 }
 
+.header__logo img {
+  max-width: 150px;
+}
+
 .header__menu {
   grid-column: 6/7;
   align-self: center;
