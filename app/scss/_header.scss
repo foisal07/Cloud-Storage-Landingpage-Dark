@@ -3,23 +3,24 @@
 
     .container{
         grid-template-columns: 1fr 4fr 2fr;
-        grid-row: auto;
+        grid-row: 1fr;
+        grid-gap: 1rem;
     }
 
     &__logo {
         grid-column: 1/2;
 
         img {
-            max-width:150px;
+        max-width:150px;
         }
     }
 
     &__menu {
-        grid-column: 6/7;
+        grid-column: 5/7;
         align-self: center;
 
         a:not(:last-child) {
-            padding-right: 2.5rem;
+        padding-right: 1.5rem;
         }
     }
 }

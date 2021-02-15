@@ -56,7 +56,8 @@ li {
 
 .header .container {
   grid-template-columns: 1fr 4fr 2fr;
-  grid-row: auto;
+  grid-row: 1fr;
+  grid-gap: 1rem;
 }
 
 .header__logo {
@@ -68,11 +69,11 @@ li {
 }
 
 .header__menu {
-  grid-column: 6/7;
+  grid-column: 5/7;
   align-self: center;
 }
 
 .header__menu a:not(:last-child) {
-  padding-right: 2.5rem;
+  padding-right: 1.5rem;
 }
 /*# sourceMappingURL=style.css.map */
