@@ -1,0 +1,21 @@
+.header {
+    background-color: $introBG;
+
+    .container{
+        grid-template-columns: 1fr 4fr 2fr;
+        grid-row: auto;
+    }
+
+    &__logo {
+        grid-column: 1/2;
+    }
+
+    &__menu {
+        grid-column: 6/7;
+        align-self: center;
+
+        a:not(:last-child) {
+            padding-right: 2.5rem;
+        }
+    }
+}
