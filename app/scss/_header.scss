@@ -9,6 +9,7 @@
 
     &__logo {
         grid-column: 1/2;
+        align-self: center;
 
         img {
         max-width:150px;
@@ -18,6 +19,15 @@
     &__menu {
         grid-column: 5/7;
         align-self: center;
+
+        a {
+        transition: font 200ms ease-in-out;
+        }
+
+        a:hover {
+        text-decoration: underline;
+        font-weight: 700;
+        }
 
         a:not(:last-child) {
         padding-right: 1.5rem;
