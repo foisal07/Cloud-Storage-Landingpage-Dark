@@ -2,17 +2,19 @@
     background-color: $introBG;
 
     .container{
-        grid-template-columns: 1fr 4fr 2fr;
+        grid-template-columns: 1fr 3fr 2fr;
         grid-row: 1fr;
         grid-gap: 1rem;
+        padding: 1.375rem 1.1875rem 0 1.1875rem;
     }
 
     &__logo {
         grid-column: 1/2;
         align-self: center;
+        
 
         img {
-        max-width:150px;
+        max-width: 5rem;
         }
     }
 
@@ -30,7 +32,7 @@
         }
 
         a:not(:last-child) {
-        padding-right: 1.5rem;
+        padding-right: 1.1875rem;
         }
     }
 }

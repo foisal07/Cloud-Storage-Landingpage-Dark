@@ -1,10 +1,20 @@
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 2rem 1.5rem;
   display: grid;
 }
 
-.button {
+.container_mobile_PX {
+  padding: 0 1.8125rem;
+}
 
+.container_small {
+  max-width: 650px;
+}
+
+.btn {
+  display: inline-block;
+  width: 15rem;
+  height: 3rem;
+  background-color: linear-gradient (to right, $ctaCyan, $ctaBlue);
 } 
