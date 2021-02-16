@@ -1,18 +1,20 @@
 .feature {
     background-color: $mainBg;
+    padding-top: 8.8125rem;
+    text-align: center;
     
     .container {
-        
+        grid-gap: 5.4375rem;
     }
 
     &__items {
 
         img {
-
+            margin-bottom: 2.175rem;
         }
 
         h2 {
-
+            padding-bottom: 1.25rem;
         }
 
     }

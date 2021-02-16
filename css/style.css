@@ -43,6 +43,7 @@ a {
 .container {
   max-width: 1440px;
   margin: 0 auto;
+  display: grid;
 }
 
 .container_mobile_PX {
@@ -70,7 +71,6 @@ a {
 
 .header .container {
   grid-template-columns: 1fr 3fr 2fr;
-  grid-row: 1fr;
   grid-gap: 1rem;
   padding: 1.375rem 1.1875rem 0 1.1875rem;
 }
@@ -103,9 +103,13 @@ a {
 }
 
 .hero {
-  text-align: center;
   background-color: #1c2431;
+  text-align: center;
   padding-top: 3.125rem;
+}
+
+.hero .container {
+  justify-items: center;
 }
 
 .hero__image img {
@@ -125,5 +129,19 @@ a {
 
 .feature {
   background-color: #181f2a;
+  padding-top: 8.8125rem;
+  text-align: center;
+}
+
+.feature .container {
+  grid-gap: 5.4375rem;
+}
+
+.feature__items img {
+  margin-bottom: 2.175rem;
+}
+
+.feature__items h2 {
+  padding-bottom: 1.25rem;
 }
 /*# sourceMappingURL=style.css.map */

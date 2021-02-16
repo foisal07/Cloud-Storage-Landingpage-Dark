@@ -1,7 +1,11 @@
 .hero {
+    background-color: $introBg;
     text-align: center;
-    background-color: $introBG;
     padding-top: 3.125rem;
+
+    .container {
+        justify-items: center;
+    }
 
     &__image {
     
@@ -13,7 +17,7 @@
 
     &__text {
 
-        h1  {
+        h1 {
             font-size: 1.5rem;
             padding-bottom: 1.8125rem;
             line-height: 1.6;
@@ -22,9 +26,5 @@
         p {
             margin-bottom: 2.0625rem;
         }
-    }
-
-    &__cta {
-
     }
 }
