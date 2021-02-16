@@ -18,8 +18,13 @@
   font-weight: 700;
   width: 15rem;
   height: 3rem;
-  padding: 1.25rem;
+  padding: 1rem;
   border-radius: 1.75rem;
   background-image: linear-gradient(to right, $ctaCyan, $ctaBlue);
-  
+  transition: backgorund 300ms ease-in-out;
+
+  &:hover {
+    background: linear-gradient(to right, $ctaBlue, $ctaBlue);
+  }
 } 
+

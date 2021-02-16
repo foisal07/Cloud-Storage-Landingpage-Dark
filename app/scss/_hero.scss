@@ -5,49 +5,52 @@
 
     .container {
         justify-items: center;
-        z-index: 1;
+        
     }
 
     &__image {
+        position: relative;
+        z-index: 2;
         
         img {
+            position: relative;
             max-width: 90%;
-            padding: 2.625rem 0  2.4375rem 0;
+            padding: 2.625rem 0  2.4375rem 0;   
         }
     }
 
     &__text {
-        position: relative;
         
         h1 {
+            position: relative;
             font-size: 1.5rem;
-            padding-bottom: 1.8125rem;
+            padding-bottom: 1.5625rem;
             line-height: 1.6;
-        }
+            z-index:1;
 
-       // &::after {
-            content: "";
-            position: absolute;
-            background-image: url(/images/bg-curvy-mobile.svg);
-            width: 98%;
-            height: 58%;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: bottom;
-            left: 0;
-            /* top: 120px; */
-            bottom: 0;
-        }
-    
-    &__cta {
-        background-color: $mainBg;
-    
-        p {
-            margin-bottom: 2.0625rem;
-        }
+            &::before {
+                content: "";
+                position: absolute;
+                background-image: url(/images/bg-curvy-mobile.svg);
+                width: 100%;
+                height: 159%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: bottom;
+                left: 0;
+                bottom: 0;
+                z-index: -1;
+            }
+        }     
     }
 
-    
+    &__subcta {
+        background-color: $mainBg;
+    }
+
+    &__subhead {
+        padding-bottom: 2.375rem;
+    }
 }
 
    
