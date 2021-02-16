@@ -70,6 +70,10 @@ a {
   background: linear-gradient(to right, #339ecc, #339ecc);
 }
 
+.mainBgColor {
+  background-color: #181f2a;
+}
+
 .header {
   background-color: #1c2431;
 }
@@ -159,7 +163,6 @@ a {
 }
 
 .feature {
-  background-color: #181f2a;
   padding-top: 8.8125rem;
   text-align: center;
 }
@@ -173,6 +176,40 @@ a {
 }
 
 .feature__items h2 {
-  padding-bottom: 1.25rem;
+  font-size: 1.125rem;
+  padding-bottom: 1rem;
+}
+
+.productive {
+  padding-top: 11rem;
+}
+
+.productive__image img {
+  max-width: 100%;
+  margin-bottom: 3.3125rem;
+}
+
+.productive__text h2 {
+  padding-bottom: 1.625rem;
+}
+
+.productive__text p {
+  padding-bottom: 1.125rem;
+}
+
+.productive__text .fylo-work_link {
+  display: flex;
+  flex-direction: rox;
+}
+
+.productive__text .fylo-work_link a {
+  color: #65e2d9;
+  text-decoration: underline;
+  margin-right: .625rem;
+  transition: color 300ms ease-in-out;
+}
+
+.productive__text .fylo-work_link a:hover {
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

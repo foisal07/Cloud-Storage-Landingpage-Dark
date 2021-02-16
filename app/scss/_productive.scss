@@ -1,0 +1,38 @@
+.productive {
+    padding-top: 11rem;
+
+    &__image {
+
+        img{
+            max-width:100%;
+            margin-bottom: 3.3125rem;
+        }
+    }
+
+    &__text {
+        
+        h2 {
+            padding-bottom: 1.625rem;
+        }
+
+        p {
+            padding-bottom: 1.125rem;
+        }
+
+        .fylo-work_link {
+            display: flex;
+            flex-direction: rox;
+
+            a {
+                color:$ctaCyan;
+                text-decoration: underline;
+                margin-right:.625rem;
+                transition: color 300ms ease-in-out;
+    
+                &:hover {
+                    color: $white;
+                }
+            }
+        }      
+    }
+}
