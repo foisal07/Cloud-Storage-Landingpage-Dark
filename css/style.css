@@ -43,7 +43,6 @@ a {
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  display: grid;
 }
 
 .container_mobile_PX {
@@ -56,9 +55,13 @@ a {
 
 .btn {
   display: inline-block;
+  font-size: .8125rem;
+  font-weight: 700;
   width: 15rem;
   height: 3rem;
-  background-color: linear-gradient to right, #65e2d9, #339ecc;
+  padding: 1.25rem;
+  border-radius: 1.75rem;
+  background-image: linear-gradient(to right, #65e2d9, #339ecc);
 }
 
 .header {
