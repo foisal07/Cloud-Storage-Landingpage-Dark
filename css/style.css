@@ -122,4 +122,8 @@ a {
 .hero__text p {
   margin-bottom: 2.0625rem;
 }
+
+.feature {
+  background-color: #181f2a;
+}
 /*# sourceMappingURL=style.css.map */
