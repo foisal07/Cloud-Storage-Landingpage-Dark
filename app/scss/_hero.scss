@@ -5,26 +5,49 @@
 
     .container {
         justify-items: center;
+        z-index: 1;
     }
 
     &__image {
-    
+        
         img {
-            max-width: 95%;
+            max-width: 90%;
             padding: 2.625rem 0  2.4375rem 0;
         }
     }
 
     &__text {
-
+        position: relative;
+        
         h1 {
             font-size: 1.5rem;
             padding-bottom: 1.8125rem;
             line-height: 1.6;
         }
 
+       // &::after {
+            content: "";
+            position: absolute;
+            background-image: url(/images/bg-curvy-mobile.svg);
+            width: 98%;
+            height: 58%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom;
+            left: 0;
+            /* top: 120px; */
+            bottom: 0;
+        }
+    
+    &__cta {
+        background-color: $mainBg;
+    
         p {
             margin-bottom: 2.0625rem;
         }
     }
+
+    
 }
+
+   
