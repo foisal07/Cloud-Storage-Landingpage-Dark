@@ -306,4 +306,45 @@ a {
   border-radius: 50px;
   padding: 1rem 1.875rem;
 }
+
+.footer {
+  padding-top: 4.5rem;
+  padding-bottom: 2.625rem;
+}
+
+.footer .container {
+  grid-gap: 5rem;
+}
+
+.footer__contact {
+  display: grid;
+  grid-gap: 1.875rem;
+}
+
+.footer__address, .footer__phone, .footer__email {
+  display: grid;
+  grid-template-columns: .1fr 1fr;
+  grid-row: auto;
+}
+
+.footer__firstMenu, .footer__secondMenu {
+  display: flex;
+  flex-direction: column;
+  line-height: 2.8;
+}
+
+.footer__socialIcon {
+  display: grid;
+  justify-self: center;
+  max-width: 6.625rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: .625rem;
+}
+
+.footer__socialIcon a {
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
 /*# sourceMappingURL=style.css.map */

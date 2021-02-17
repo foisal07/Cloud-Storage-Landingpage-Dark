@@ -1,0 +1,47 @@
+.footer {
+    padding-top: 4.5rem;
+    padding-bottom: 2.625rem;
+
+    .container {
+        grid-gap: 5rem;
+    }
+
+    &__logo {
+
+        img {
+            
+        }
+    }
+
+    &__contact {
+        display: grid;
+        grid-gap: 1.875rem;
+    }
+
+    &__address, &__phone, &__email {
+        display: grid;
+        grid-template-columns: .1fr 1fr;
+        grid-row: auto; 
+    }
+
+    &__firstMenu, &__secondMenu {
+        display: flex;
+        flex-direction: column;
+        line-height: 2.8;
+    }
+
+    &__socialIcon {
+        display: grid;
+        justify-self: center;
+        max-width: 6.625rem ;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap:.625rem;
+
+        a {
+            width: 20px;
+            height:20px;
+            border:1px solid $white;
+            border-radius: 50%;
+        }
+    }
+}
