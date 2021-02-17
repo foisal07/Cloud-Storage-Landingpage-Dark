@@ -1,15 +1,32 @@
-.container {
-    padding-top: 9.5625rem;
-}
-
 .testimonial {
+    padding-top: 9.5625rem;
+
+    .container {
+        position: relative;
+        justify-items: center;
+        grid-gap:1.3725rem;
+        z-index:1;
+
+        &::after {
+        position: absolute;
+        content: "";
+        background-image: url(/images/bg-quotes.png);
+        width: 48px;
+        height: 7%;
+        background-repeat: no-repeat;
+        left: 43px;
+        top: -31px;
+        background-position: center center;
+        background-size: 55%;
+        z-index: -1;
+        }
+    }
 
     &__card {
-        justify-items: center;
         background-color: $introBg;
-        font-size: 0.75rem;
         width: 17.5rem;
         height: 11rem;
+        font-size: 0.75rem;
         padding: 1.375rem;
         border-radius: 5px;
 

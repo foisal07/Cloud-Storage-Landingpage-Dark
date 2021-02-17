@@ -15,6 +15,7 @@ body {
   line-height: 1.3;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 h1, h2, h3 {
@@ -181,7 +182,7 @@ a {
 }
 
 .productive {
-  padding-top: 11rem;
+  padding-top: 10.875rem;
 }
 
 .productive__image {
@@ -217,16 +218,36 @@ a {
   color: white;
 }
 
-.container {
+.testimonial {
   padding-top: 9.5625rem;
 }
 
-.testimonial__card {
+.testimonial .container {
+  position: relative;
   justify-items: center;
+  grid-gap: 1.3725rem;
+  z-index: 1;
+}
+
+.testimonial .container::after {
+  position: absolute;
+  content: "";
+  background-image: url(/images/bg-quotes.png);
+  width: 48px;
+  height: 7%;
+  background-repeat: no-repeat;
+  left: 43px;
+  top: -31px;
+  background-position: center center;
+  background-size: 55%;
+  z-index: -1;
+}
+
+.testimonial__card {
   background-color: #1c2431;
-  font-size: 0.75rem;
   width: 17.5rem;
   height: 11rem;
+  font-size: 0.75rem;
   padding: 1.375rem;
   border-radius: 5px;
 }
