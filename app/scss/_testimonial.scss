@@ -1,0 +1,42 @@
+.container {
+    padding-top: 9.5625rem;
+}
+
+.testimonial {
+
+    &__card {
+        justify-items: center;
+        background-color: $introBg;
+        font-size: 0.75rem;
+        width: 17.5rem;
+        height: 11rem;
+        padding: 1.375rem;
+        border-radius: 5px;
+
+        &__text {
+            padding-bottom: 1.25rem;
+        }
+
+        .bio {
+            display: grid;
+            grid-template-columns: .7fr 4fr;
+            grid-gap:10px;
+
+            &__image {
+            align-self: center;
+
+                img {
+                    width:100%;
+                    border-radius:50%;
+                }
+            }
+
+            &__detail {
+
+                .name {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
