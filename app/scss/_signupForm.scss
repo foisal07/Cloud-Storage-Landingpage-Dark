@@ -1,0 +1,31 @@
+.signup {
+    padding-top: 10rem;
+    text-align: center;
+
+    &__container {
+        background-color: $introBg;
+        padding: 2.625rem 1.6875rem;
+        border-radius: 5px;
+
+        h2{
+            margin-bottom: 1.625rem;
+        }
+
+        p {
+            margin-bottom: 2.125rem;
+        }
+    }
+
+    &__form {
+        display: grid;
+        grid-gap:1.5625rem;
+
+        #email, .btn {
+            width: 100%;
+            color: $white;
+            border: none;
+            border-radius: 50px;
+            padding: 1rem 1.875rem;
+        }
+    }
+}
