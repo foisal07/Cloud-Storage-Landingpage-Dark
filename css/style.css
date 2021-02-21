@@ -342,9 +342,16 @@ a {
 }
 
 .footer__socialIcon a {
-  width: 20px;
-  height: 20px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
   border: 1px solid white;
   border-radius: 50%;
+  padding: 5px 9px;
+  transition: color 300ms ease-in-out;
+}
+
+.footer__socialIcon a:hover {
+  color: #65e2d9;
 }
 /*# sourceMappingURL=style.css.map */
