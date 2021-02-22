@@ -3,7 +3,14 @@
 
     .container {
         justify-items: center;
-        grid-gap:1.3725rem;
+        grid-gap: 1.3725rem;
+
+        @include breakpoint-up (large) {
+            max-width: 60rem;
+            grid-template-columns: repeat(3, 1fr);
+            grid-row: 1fr;
+            grid-gap: 1.25rem;
+        }
         
     }
 

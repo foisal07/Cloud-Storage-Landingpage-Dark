@@ -1,6 +1,16 @@
 .productive {
     padding-top: 10.875rem;
 
+    .container {
+
+        @include breakpoint-up (medium) {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-gap: 2rem;
+        }
+
+    }
+
     &__image {
         justify-self: center;
         
@@ -8,10 +18,14 @@
             max-width:100%;
             margin-bottom: 3.3125rem;
         }
+
+        @include breakpoint-up (medium) {
+            grid-column: 1/2;
+        }
     }
 
     &__text {
-        
+
         h2 {
             padding-bottom: 1.625rem;
         }
@@ -34,6 +48,11 @@
                     color: $white;
                 }
             }
-        }      
+        }
+        
+        @include breakpoint-up (medium) {
+            grid-column: 2/3;
+            align-self: center;
+        }
     }
 }

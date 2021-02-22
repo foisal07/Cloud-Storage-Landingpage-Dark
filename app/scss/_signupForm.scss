@@ -3,9 +3,11 @@
     text-align: center;
 
     &__container {
+        max-width: 27.25rem;
         background-color: $introBg;
         padding: 2.625rem 1.6875rem;
         border-radius: 5px;
+        justify-self: center;
 
         h2{
             margin-bottom: 1.625rem;
